@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QR-Code Generator</title>
 </head>
 <body>
+    
+    <script type="text/JavaScript">
+     function qr_generate(){
+        let gapi="https://chart.googleapis.com/chart?cht=qr&chs="
+        let image= document.getElementById("empty");
+        let text=document.getElementById("text").value;
+        let size=document.getElementById("size");
+     }
+
+
+    </script>
+
+    <div class="grid">
+        <h2 align="center">QR-CODE GENERATOR</h2>
+        <center><img src="" id="empty"></center>
+        <select id="size">
+            <option value="100x100">100x100</option>
+            <option value="150x150">150x150</option>
+            <option value="200x200">200x200</option>
+            <option value="250x250">250x250</option>
+            <option value="300x300">300x300</option>
+       </select>
+       <br><br>
+       <textarea placeholder="Enter your text" id="text"></textarea>
+       <input type="submit" value="generate" onclick="qr_generate">
+    </div>
+
     
 </body>
 </html>
