@@ -1,0 +1,18 @@
+.grid{
+    background-color: rgb(167, 21, 21);
+    text-align: center;
+}
+.empty{
+    max-width: 100%;
+    max-width: 100%;
+}
+#text{
+    background-color: rgb(24, 6, 2);
+    color: antiquewhite;
+}
+.generate_button{
+    font-style: initial;
+    margin-top: 10px;
+    padding: 5px;
+}
+h2{color: aliceblue;}
