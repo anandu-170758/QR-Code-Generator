@@ -9,13 +9,40 @@
 <body>
     
     <script type="text/JavaScript">
-     function qr_generate(){
+     function qr_generate()
+     {
         let gapi="https://chart.googleapis.com/chart?cht=qr&chs="
         let image= document.getElementById("empty");
-        let text=document.getElementById("text").value;
-        let size=document.getElementById("size");
+        let not=document.getElementById("text").value;
+        let size=document.getElementById("size").value;
+      
+        if (text!=="" && size=="100")
+        {
+            image.src= gapi+"100x100"+"&chl="+not;
+        }
+        else if(text!=="" && size=="150")
+        {
+            image.src= gapi+"150x150"+"&chl="+not;
+        }
+        else if(text!=="" && size=="200")
+        {
+            image.src= gapi+"200x200"+"&chl="+not;
+        }
+        else if(text!=="" && size=="250")
+        {
+            image.src= gapi+"250x250"+"&chl="+not;
+        }
+        else if(text!=="" && size=="300")
+        {
+            image.src= gapi+"300x300"+"&chl="+not;
+        }
+        
+       else { 
+             alert("Please type a text")
+        }
+  
      }
-
+  
 
     </script>
 
@@ -23,15 +50,16 @@
         <h2 align="center">QR-CODE GENERATOR</h2>
         <center><img src="" id="empty"></center>
         <select id="size">
-            <option value="100x100">100x100</option>
-            <option value="150x150">150x150</option>
-            <option value="200x200">200x200</option>
-            <option value="250x250">250x250</option>
-            <option value="300x300">300x300</option>
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200">200x200</option>
+            <option value="250">250x250</option>
+            <option value="300">300x300</option>
        </select>
        <br><br>
        <textarea placeholder="Enter your text" id="text"></textarea>
-       <input type="submit" value="generate" onclick="qr_generate">
+       <br>
+       <input type="submit" value="generate" onclick="qr_generate()">
     </div>
 
     
