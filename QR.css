@@ -1,6 +1,7 @@
 .grid{
     background-color: rgb(167, 21, 21);
     text-align: center;
+    
 }
 .empty
 {
@@ -47,5 +48,5 @@
         margin-top:10px
     }
 
-h2{color: aliceblue;}
+h2{color: aliceblue;} 
 
