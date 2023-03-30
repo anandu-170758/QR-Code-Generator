@@ -1,5 +1,5 @@
 .grid{
-    background-color: rgb(167, 21, 21);
+    background-color: rgb(16, 21, 21);
     text-align: center;
     
 }
@@ -33,7 +33,7 @@
 
 .generate_button
     {
-        background: #4CAF50;
+        background: #4c5baf;
         border: none;
         color: white;
         padding: 10px;
